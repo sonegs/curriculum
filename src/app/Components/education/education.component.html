@@ -1,0 +1,17 @@
+<div class="Education">
+    <div class="animated fadeIn">
+        <h1 class="subsection-title title-medium text-center text-primary">Education</h1><br>
+        <div class="card-columns">
+            <div class="card" *ngFor="let education of educations">
+
+                <img class="card-img-top" [src]="education.img" alt="Card image cap">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">{{ education.nombre }}</h5>
+                    <p class="card-text">{{ education.bio }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

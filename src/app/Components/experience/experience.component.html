@@ -1,0 +1,19 @@
+<div class='Experience'>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center animated fadeIn" id="about">
+        <div class="container">
+            <h1 class="subsection-title title-medium text-center text-primary">Experience</h1><br>
+            <div class="list-group">
+                <ul class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let experience of experiences">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ experience.name }}</h5>
+                        <small>{{ experience.date }}</small>
+                    </div>
+                    <p class="mb-1">{{ experience.bio }}</p>
+                    <small>{{ experience.company }}</small>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</div>

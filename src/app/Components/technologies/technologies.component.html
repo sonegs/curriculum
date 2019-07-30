@@ -1,0 +1,21 @@
+<div class="Technologies">
+    <div class="animated fadeIn">
+        <h1 class="subsection-title title-medium text-center text-primary">Technologies</h1>
+        <br>
+        <div class="row">
+
+            <div class="col-3" *ngFor="let technology of technologies" routerLinkActive="active">
+
+                <div class="images" appUnshadows>
+                    <a [href]="technology.link" target="_blank">
+                        <img class="card-img-top" [src]="technology.img" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
