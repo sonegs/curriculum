@@ -23,6 +23,7 @@ import { APP_ROUTING } from './app.routes';
 import { EducationService } from './services/education.service';
 import { ExperienceService } from './services/experience.service';
 import { TechnologyService } from './services/technologies.service';
+import { AboutService } from './services/about.service';
 
 // importacion de la directiva
 
@@ -49,7 +50,8 @@ import { UnshadowsDirective } from './directive/unshadows.directive';
   providers: [
     EducationService,
     ExperienceService,
-    TechnologyService
+    TechnologyService,
+    AboutService
   ],
   bootstrap: [AppComponent]
 })

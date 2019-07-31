@@ -1,4 +1,17 @@
-.scroll {
+.table {
+    position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-icons {
     font-size: 3rem;
     color: #505e6b;
+}
+
+.texting {
+    font-size: 1rem;
+    text-align: center;
+    color: #505e6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }

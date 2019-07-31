@@ -12,7 +12,6 @@ export class UnshadowsDirective {
   }
 
   @HostListener('mouseenter') mouseOver() {
-    this.el.nativeElement.style.transition = '1s';
     this.el.nativeElement.style.filter = 'grayscale(0%)';
   }
   @HostListener('mouseleave') mouseOut() {

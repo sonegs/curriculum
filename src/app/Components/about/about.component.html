@@ -2,27 +2,22 @@
     <div class="animated fadeIn">
         <h1 class="subsection-title title-medium text-center text-primary">About me</h1>
         <br>
-        <div class="row">
+        <div class="table ion-align-items-start">
+            <div class="about-icons">
+                <div class="row align">
+                    <div class="col justify-content-center align-items-center" *ngFor="let about of abouts" routerLinkActive="active">
+                        <a [href]="">
+                            <i [class]="about.link" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }" (mouseover)="bounce()" (mouseout)="out()" [@bouncing]=currentState>
+                        </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col justify-content-center align-items-center">
 
-            <div class="col-3">
-
-                <div class="scroll">
-                    <a [href]="" id="prueba">
-                        <i class="fas fa-futbol" id="x" (mouseover)="movement(this)"></i>
-                    </a>
-                    <a [href]="" id="prueba2">
-                        <i class="fas fa-futbol" (mouseover)="movement(this)"></i>
-                    </a>
-                    <a [href]="" id="prueba3">
-                        <i class="fas fa-futbol" (mouseover)="movement(this)"></i>
-                    </a>
-                    <a [href]="" id="prueba4">
-                        <i class="fas fa-futbol" (mouseover)="movement(this)"></i>
-                    </a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
 
     </div>
