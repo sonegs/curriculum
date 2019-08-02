@@ -29,10 +29,17 @@ body {
     margin-top: 15%;
 }
 
+.Home {
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
 .Education,
 .Experience,
-.Technologies {
-    margin-top: 3%;
+.Technologies,
+.About {
+    margin-top: 4%;
 }
 
 @keyframes fadeIn {

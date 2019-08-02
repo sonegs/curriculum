@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { trigger, state, style, animate, transition, keyframes, query, useAnimation } from '@angular/animations';
 import { AboutService, About } from '../../services/about.service';
-
+import { transAnimation } from '../shared/animation/animation';
 
 
 @Component({
@@ -11,24 +11,22 @@ import { AboutService, About } from '../../services/about.service';
   styleUrls: ['./about.component.css'],
   animations: [
     trigger('bouncing', [
-      state('normal', style({
-        transform: 'translateY(0%)',
+      state ('normal', style ({
+        transform: 'translateY(0%)'
+      })),
+      state ('bounce', style ({
+        transform: 'translateY(-40%)'
       })),
     transition('normal => *', [
-      animate('2s', keyframes([
-        style({ transform: 'translateY(0%)', offset: 0}),
-        style({ transform: 'translateY(-40%)', offset: 0.25}),
-        style({ transform: 'translateY(0%)', offset: 0.5}),
-        style({ transform: 'translateY(-40%)', offset: 0.75}),
-        style({ transform: 'translateY(0%)', offset: 1}),
+        useAnimation(transAnimation, {
+          params: {
+          }
+        })
 
-      ]))
+      ])
     ])
-  ])
-  ]}
+    ]})
 
-
-)
 export class AboutComponent implements OnInit {
 
   // tslint:disable-next-line:variable-name
@@ -38,21 +36,29 @@ export class AboutComponent implements OnInit {
 }
 
   currentState = 'normal';
+
   abouts: About[] = [];
-  propiedades = {
-    moving: false // gracias a lo escrito en el clases.component, si cambiamos esta variable
-    // a true o false, podemos modificar su color
-  };
+
+
 
 ngOnInit() {
   this.abouts = this._AboutService.getAbouts();
+
   }
+/*[
+    'Spotify',
+    'Soccer',
+    'Travel',
+    'Learn',
+  ];*/
 
   bounce() {
     this.currentState = this.currentState === 'normal' ? '*' : 'normal';
+    console.log('llamada al salto');
   }
   out() {
     this.currentState = 'normal';
+    console.log('');
   }
 
 }

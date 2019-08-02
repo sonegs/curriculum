@@ -40,6 +40,12 @@ h3 {
     ;
 }
 
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+    color: #cbd1db;
+    background-color: #3866bd;
+    transition: 0.60s;
+}
+
 @media (min-width:992px) {
     #sideNav {
         text-align: center;
@@ -123,7 +129,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-    background-color: #3866bd!important
+    background-color: #3866bd!important;
+    background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(0, 97, 224, 0.5));
 }
 
 .social-icons a {
@@ -131,7 +138,7 @@ section.resume-section .resume-item .resume-date {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: #495057;
+    background-color: #234686;
     color: #fff!important;
     border-radius: 100%;
     text-align: center;
@@ -147,6 +154,6 @@ section.resume-section .resume-item .resume-date {
 
 .social-icons a:hover {
     /* cuando el raton está encima de los iconos de redes sociales */
-    background-color: #717180;
-    transition: 1s
+    background-color: #3b82df;
+    transition: 0.70s
 }

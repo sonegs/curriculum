@@ -10,7 +10,13 @@
                     <a [href]="technology.link" target="_blank">
                         <img class="card-img-top" [src]="technology.img" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
                     </a>
-
+                    <div class="col-3">
+                        <img class="card-img-top" [src]="technology.level[0]" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                        <img class="card-img-top" [src]="technology.level[1]" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                        <img class="card-img-top" [src]="technology.level[2]" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                        <img class="card-img-top" [src]="technology.level[3]" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                        <img class="card-img-top" [src]="technology.level[4]" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                    </div>
                 </div>
 
             </div>

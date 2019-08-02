@@ -1,23 +1,20 @@
-<div class="About me">
+<div class="About">
     <div class="animated fadeIn">
         <h1 class="subsection-title title-medium text-center text-primary">About me</h1>
         <br>
-        <div class="table ion-align-items-start">
-            <div class="about-icons">
-                <div class="row align">
-                    <div class="col justify-content-center align-items-center" *ngFor="let about of abouts" routerLinkActive="active">
-                        <a [href]="">
-                            <i [class]="about.link" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }" (mouseover)="bounce()" (mouseout)="out()" [@bouncing]=currentState>
-                        </i>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col justify-content-center align-items-center">
+        <table>
 
-                    </div>
+            <div class="col" *ngFor="let about of abouts" routerLinkActive="active">
+
+                <div class="row-4">
+                    <br>
+                    <img class="icons" [src]="about.img" (mouseover)="bounce()" (mouseout)="out()" [@bouncing]="currentState"> {{about.bio}}
+
+
                 </div>
+
             </div>
-        </div>
-
+        </table>
     </div>
+
+</div>
