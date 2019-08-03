@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TechnologyService, Technology } from '../../services/technologies.service';
 
 
+
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
@@ -21,7 +22,8 @@ export class TechnologyComponent implements OnInit {
    }
 
    propiedades = {
-    unshadows: false // gracias a lo escrito en el clases.component, si cambiamos esta variable
+    unshadows: false,
+    transparent: false // gracias a lo escrito en el clases.component, si cambiamos esta variable
     // a true o false, podemos modificar su color
   };
 

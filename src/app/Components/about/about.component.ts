@@ -19,8 +19,6 @@ import { transAnimation } from '../shared/animation/animation';
       })),
     transition('normal => *', [
         useAnimation(transAnimation, {
-          params: {
-          }
         })
 
       ])
@@ -45,12 +43,6 @@ ngOnInit() {
   this.abouts = this._AboutService.getAbouts();
 
   }
-/*[
-    'Spotify',
-    'Soccer',
-    'Travel',
-    'Learn',
-  ];*/
 
   bounce() {
     this.currentState = this.currentState === 'normal' ? '*' : 'normal';

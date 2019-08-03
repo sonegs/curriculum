@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 // importacion de todas las paginas
 
 import { AppComponent } from './app.component';
@@ -25,9 +24,10 @@ import { ExperienceService } from './services/experience.service';
 import { TechnologyService } from './services/technologies.service';
 import { AboutService } from './services/about.service';
 
-// importacion de la directiva
+// importacion de la directivas
 
-import { UnshadowsDirective } from './directive/unshadows.directive';
+import { UnshadowsDirective } from './directives/unshadows.directive';
+import { TransparentDirective } from './directives/transparent.directive';
 
 
 @NgModule({
@@ -40,7 +40,8 @@ import { UnshadowsDirective } from './directive/unshadows.directive';
     ContactComponent,
     NavbarComponent,
     AboutComponent,
-    UnshadowsDirective
+    UnshadowsDirective,
+    TransparentDirective
   ],
   imports: [
     BrowserModule,
