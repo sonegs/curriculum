@@ -3,37 +3,45 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Miguel Cobo Martínez</span>
         <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Yo.jpeg"  alt="Me">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Yo.jpeg"  alt="Me" id="me">
       </span>
     </a>
+
+
+
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto " routerLinkActive="active">
             <li class="nav-item">
-                <a class="nav-link " [routerLink]="['home']">
-                    Home </a>
+                <a class="nav-link js-scroll-trigger" [routerLink]="['home']">
+                    Home 
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " [routerLink]="['education']">Education
+                <a class="nav-link js-scroll-trigger" [routerLink]="['education']">
+                    Education
             </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " [routerLink]="['experience']">
+                <a class="nav-link js-scroll-trigger" [routerLink]="['experience']">
                     Experience
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " [routerLink]="['technologies']">
+                <a class="nav-link js-scroll-trigger" [routerLink]="['technologies']">
                     Technologies
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " [routerLink]="['about']">
+                <a class="nav-link js-scroll-trigger" [routerLink]="['about']">
                     About me
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " [routerLink]="['contact']">
+                <a class="nav-link js-scroll-trigger" [routerLink]="['contact']">
                     Contact
                 </a>
             </li>
@@ -41,11 +49,16 @@
     </div>
 
     <div class="social-icons">
+
         <a href="https://www.linkedin.com/in/miguelcobomartinez/" target="_blank">
+
             <i class="fab fa-linkedin-in"></i>
+
         </a>
         <a href="https://github.com/sonegs" target="_blank">
+
             <i class="fab fa-github"></i>
+
         </a>
     </div>
 

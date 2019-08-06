@@ -1,23 +1,27 @@
-<div class="Technologies">
-    <div class="animated fadeIn">
-        <h1 class="subsection-title title-medium text-center text-primary">Technologies</h1>
-        <br>
-        <div class="row">
+<div class="container-fluid p-0">
+    <div class='Technologies'>
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+            <div class="animated fadeIn">
+                <div class="resume-content mr-auto">
+                    <h1 class="subsection-title title-medium text-center text-primary">Technologies</h1><br>
+                    <div class="row">
 
-            <div class="col-3" *ngFor="let technology of technologies" routerLinkActive="active">
-                <div class="row">
+                        <div class="col-3" *ngFor="let technology of technologies" routerLinkActive="active">
+                            <div class="row">
 
-                    <div class="images" appUnshadows>
-                        <a [href]="technology.link" target="_blank">
-                            <img class="card-img-top" [src]="technology.img" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
-                        </a>
+                                <div class="images" appUnshadows>
+                                    <a [href]="technology.link" target="_blank">
+                                        <img class="card-img-top" [src]="technology.img" alt="error" (mouseover)="propiedades.unshadows = !propiedades.unshadows" [ngClass]="{ 'filter: grayscale(100%)': propiedades.unshadows, 'filter: grayscale(0%)': !propiedades.unshadows }">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
-
-        </div>
-
+        </section>
     </div>
 
 </div>

@@ -6,7 +6,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class TransparentDirective {
 
   constructor( private el: ElementRef) {
-// shadows the tech images
+// opacing the tech images
     el.nativeElement.style.filter = 'opacity(0)';
   }
 

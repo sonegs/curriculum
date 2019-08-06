@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 // importacion de todas las paginas
 
 import { AppComponent } from './app.component';
@@ -9,8 +10,8 @@ import { HomeComponent } from './Components/home/home.component';
 import { EducationComponent } from './Components/education/education.component';
 import { ExperienceComponent } from './Components/experience/experience.component';
 import { TechnologyComponent } from './Components/technologies/technologies.component';
-import { ContactComponent } from './Components/contact/contact.component';
 import { NavbarComponent } from './Components/shared/navbar/navbar.component';
+import { FooterComponent } from './Components/shared/footer/footer.component';
 import { AboutComponent } from './Components/about/about.component';
 
 // importar el archivo de rutas
@@ -30,6 +31,7 @@ import { UnshadowsDirective } from './directives/unshadows.directive';
 import { TransparentDirective } from './directives/transparent.directive';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,11 +39,12 @@ import { TransparentDirective } from './directives/transparent.directive';
     EducationComponent,
     ExperienceComponent,
     TechnologyComponent,
-    ContactComponent,
+    FooterComponent,
     NavbarComponent,
     AboutComponent,
     UnshadowsDirective,
-    TransparentDirective
+    TransparentDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

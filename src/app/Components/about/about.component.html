@@ -1,19 +1,25 @@
-<div class="About">
-    <div class="animated fadeIn">
-        <h1 class="subsection-title title-medium text-center text-primary">About me</h1>
-        <br>
-        <table>
+<div class="container-fluid p-0">
+    <div class="About">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+            <div class="animated fadeIn">
 
-            <div class="col" *ngFor="let about of abouts" routerLinkActive="active">
+                <h1 class="subsection-title title-medium text-center text-primary">About me</h1>
+                <br>
+                <table>
 
-                <div class="row-4">
-                    <br>
-                    <img class="icons" [src]="about.img" (mouseover)="bounce()" (mouseout)="out()" [@bouncing]="currentState"> {{about.bio}}
+                    <div class="col" *ngFor="let about of abouts" routerLinkActive="active">
 
-                </div>
+                        <div class="row-4">
+                            <br>
+                            <img class="icons" [src]="about.img" (mouseover)="bounce()" (mouseout)="out()" [@bouncing]="currentState"> {{about.bio}}
+
+                        </div>
+
+                    </div>
+                </table>
 
             </div>
-        </table>
-    </div>
+        </section>
 
+    </div>
 </div>
