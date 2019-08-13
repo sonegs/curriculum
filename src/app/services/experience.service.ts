@@ -7,7 +7,7 @@ constructor() { console.log('La conexión con el servicio funciona correctamente
     private experiences: Experience [] = [
       {
         name: 'Recepcionist / Tech Support',
-        bio: 'Customer service, advising about the currently legislation about driving, weapons, security, dangerous animals, crane and marine licences. Repair and maintenance of the computers, and solving the network problems',
+        bio: 'Customer service, advising about the currently legislation about driving, weapons, security, dangerous animals, cranes and marine licences. Repair and maintenance of the computers, and solving the network problems',
         date: '12/2018 - Currently',
         company: 'Avenida Medical Center'
       },

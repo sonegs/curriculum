@@ -42,11 +42,10 @@ h3 {
 
 #sideNav .navbar-nav .nav-item .nav-link:hover {
     color: #cbd1db;
-    background-color: #3866bd;
     transition: 0.60s;
 }
 
-@media (min-width:992px) {
+@media (min-width:1075px) {
     #sideNav {
         text-align: center;
         position: fixed;
@@ -127,8 +126,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-    background-color: #3866bd!important;
-    background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(0, 97, 224, 0.5));
+    background-color: #356cd1!important;
+    background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(1, 104, 238, 0.5));
 }
 
 .social-icons a {
@@ -148,7 +147,7 @@ section.resume-section .resume-item .resume-date {
 .social-icons a:hover {
     /* cuando el raton está encima de los iconos de redes sociales */
     background-color: #3b82df;
-    transition: 0.70s
+    transition: 0.40s
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -233,4 +232,42 @@ section.resume-section .resume-item .resume-date {
         padding-top: 3rem!important;
         padding-bottom: 3rem!important
     }
+}
+
+#sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto
+}
+
+#sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block
+}
+
+#sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: .5rem
+}
+
+#sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: .5rem solid rgba(255, 255, 255, .2)
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase
 }

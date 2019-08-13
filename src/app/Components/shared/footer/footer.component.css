@@ -1,0 +1,31 @@
+footer {
+    width: auto;
+    height: 50px;
+    margin-top: -20px;
+    background: rgba(53, 150, 201, 0.8);
+    text-align: center;
+    opacity: 10%;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+}
+
+footer:hover {
+    background: rgba(61, 183, 253, 0.8);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.subheading {
+    margin-left: 20%;
+}
+
+@media (max-width:500px) {
+    .subheading {
+        margin-left: 0%;
+        font-size: 80%;
+    }
+}

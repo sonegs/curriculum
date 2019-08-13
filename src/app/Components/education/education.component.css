@@ -1,0 +1,101 @@
+.title {
+    margin-top: 10%;
+}
+
+perfect-scrollbar {
+    background: rgba(100, 187, 235, 0.8);
+    color: white;
+    width: auto;
+    max-height: 460px;
+}
+
+.cola,
+.bodytype {
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    max-height: 60%;
+    margin-right: -20%;
+    margin-left: 10%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.line-content {
+    text-align: center;
+    min-width: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.essence {
+    display: inline-block;
+    flex: 0 0 auto;
+    padding-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:450px) {
+    /*para moviles*/
+    .title {
+        margin-top: 30%;
+    }
+    .line-content {
+        justify-content: center;
+    }
+    perfect-scrollbar {
+        height: 400px;
+        max-width: 500px;
+        min-width: 200px;
+        background: rgba(100, 187, 235, 0.8);
+    }
+    .essence {
+        flex: 0 0 auto;
+    }
+}
+
+@media (min-width:992px) {
+    .title {
+        margin-top: 17%;
+        margin-left: 20%;
+    }
+    .icon {
+        width: 50px!important;
+        height: 50px!important;
+        color: white;
+    }
+    .line-content {
+        padding: inherit;
+        display: flex;
+        background: auto;
+        margin-left: 1200px;
+    }
+    perfect-scrollbar {
+        background: rgba(100, 187, 235, 0.8);
+        color: white;
+        position: relative;
+        max-width: max-content;
+        max-height: 400px
+    }
+    .cola,
+    .bodytype {
+        margin-right: 0%;
+        max-width: max-content;
+        position: fixed;
+        right: 0;
+        left: 0;
+    }
+    .essence {
+        padding-right: 15%;
+        display: auto;
+        width: max-content;
+    }
+    .essence:hover {
+        background: rgba(95, 187, 235, 0.8);
+    }
+}

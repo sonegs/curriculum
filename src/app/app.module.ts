@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 // importacion de todas las paginas
 
 import { AppComponent } from './app.component';
@@ -28,7 +27,17 @@ import { AboutService } from './services/about.service';
 // importacion de la directivas
 
 import { UnshadowsDirective } from './directives/unshadows.directive';
-import { TransparentDirective } from './directives/transparent.directive';
+
+// importacion del PerfectScrollbarModule
+
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 
 
 
@@ -43,13 +52,14 @@ import { TransparentDirective } from './directives/transparent.directive';
     NavbarComponent,
     AboutComponent,
     UnshadowsDirective,
-    TransparentDirective,
     FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    APP_ROUTING
+    APP_ROUTING,
+    PerfectScrollbarModule,
+    ScrollingModule,
   ],
   providers: [
     EducationService,

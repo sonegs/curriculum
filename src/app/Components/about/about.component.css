@@ -1,8 +1,22 @@
 img {
-    width: 8%;
+    width: 5%;
     height: 88%;
 }
 
 table {
     table-layout: auto;
+}
+
+@media (min-width:992px) {
+    perfect-scrollbar {
+        max-width: max-content;
+        max-height: 400px;
+    }
+    .second {
+        min-height: 100vh;
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
+        padding-left: 20rem!important;
+        margin-right: 10rem!important;
+    }
 }
