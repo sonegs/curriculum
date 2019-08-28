@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// importacion de todas las paginas
+// import the pages components
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -13,22 +13,22 @@ import { NavbarComponent } from './Components/shared/navbar/navbar.component';
 import { FooterComponent } from './Components/shared/footer/footer.component';
 import { AboutComponent } from './Components/about/about.component';
 
-// importar el archivo de rutas
+// import the routes component
 
 import { APP_ROUTING } from './app.routes';
 
-// importar los servicios
+// import the services
 
 import { EducationService } from './services/education.service';
 import { ExperienceService } from './services/experience.service';
 import { TechnologyService } from './services/technologies.service';
 import { AboutService } from './services/about.service';
 
-// importacion de la directivas
+// import the directive
 
 import { UnshadowsDirective } from './directives/unshadows.directive';
 
-// importacion del PerfectScrollbarModule
+// import the perfect scrollbar modules
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -36,9 +36,6 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
-import { ScrollingModule } from '@angular/cdk/scrolling';
-
-
 
 
 @NgModule({
@@ -58,8 +55,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     BrowserModule,
     BrowserAnimationsModule,
     APP_ROUTING,
-    PerfectScrollbarModule,
-    ScrollingModule,
+    PerfectScrollbarModule
   ],
   providers: [
     EducationService,
