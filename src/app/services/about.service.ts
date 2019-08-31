@@ -4,27 +4,30 @@ import { Injectable } from '@angular/core';
 export class AboutService {
 constructor() {}
 
-
     private abouts: About [] = [
       {
-        nombre: 'Spotify',
-        bio: 'Listen music and go to music festival is one of my passions',
+        name: 'Spotify',
+        bio: 'Listen music and go to music festival is one of my passions. I have gone more that 20 festivals',
         img: 'assets/img/about/spotify.svg',
+        idx: 0
       },
       {
-        nombre: 'Soccer',
-        bio: 'I love watch a good soccer match. However, i prefer play it instead!',
-        img: 'assets/img/about/soccer.svg'
+        name: 'Soccer',
+        bio: 'I like watch a good soccer match. However, i prefer play it instead!',
+        img: 'assets/img/about/soccer.svg',
+        idx: 1
       },
       {
-        nombre: 'Travel',
+        name: 'Travel',
         bio: 'I love travel because i think it is the best way to meet other cultures and ours',
-        img: 'assets/img/about/travel.svg'
+        img: 'assets/img/about/travel.svg',
+        idx: 2
        },
        {
-         nombre: 'Learn',
-         bio: 'Studing something new and learn news skills! I feel this can do me a better professional',
-         img: 'assets/img/about/learn.svg'
+         name: 'Learn',
+         bio: 'Taste something new or learn news skills! I feel this can do me a better professional',
+         img: 'assets/img/about/learn.svg',
+         idx: 3
        }
     ];
 
@@ -32,12 +35,12 @@ constructor() {}
 
         return this.abouts;
     }
-
     }
 
 export interface About {
 
-        nombre: string;
+        name: string;
         bio: string;
         img: string;
+        idx: number;
     }

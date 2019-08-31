@@ -5,16 +5,20 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class UnshadowsDirective {
 
+  // shadows the tech images changing the css style of the element selected. This effect would do with CSS but i show something new
+
   constructor( private el: ElementRef) {
-// shadows the tech images
+
     el.nativeElement.style.filter = 'grayscale(100%)';
+
   }
 
   @HostListener('mouseenter') mouseOver() {
     this.el.nativeElement.style.filter = 'grayscale(0%)';
-    console.log('se escucha el unshadow');
+
   }
   @HostListener('mouseleave') mouseOut() {
     this.el.nativeElement.style.filter = 'grayscale(100%)';
+
   }
 }

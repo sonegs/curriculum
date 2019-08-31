@@ -13,9 +13,15 @@ constructor() { console.log('La conexión con el servicio funciona correctamente
       },
       {
         name: 'IT Recruiter',
-        bio: 'Asesoramiento gratuito para personas desempleadas: Elaboración de un CV por competencias: Roleplaying en entrevistas de trabajo, revisión de CVs, creación y desarrollo de marca personal, elección de plataforma de empleo idónea para cada sector profesional.',
+        bio: 'Recruitment and selection of candidates for different IT and not IT positions. Search of information of the technologies (languages, tests, frameworks, databases), interviews to the candidates and follow-up of the incorporation.',
         date: '04/2018 - 12/2018',
         company: 'HRCS'
+      },
+      {
+        name: 'Manual QA',
+        bio: 'My duties in uTest platform have been executing Test Plans as a manual QA and exploratory notes,  where we are free to explore the app or web in scope, detail in a spreadsheet our steps and document our work. I also perform free exploratory, with no guide, just to look for any issue in the apps or websites in scope.',
+        date: '06/2018 - 01/2019',
+        company: 'uTest'
       },
       {
         name: 'Co-Founder',
@@ -25,14 +31,13 @@ constructor() { console.log('La conexión con el servicio funciona correctamente
       },
       {
         name: 'IT Recruiter',
-        bio: 'Asesoramiento gratuito para personas desempleadas: Elaboración de un CV por competencias: Roleplaying en entrevistas de trabajo, revisión de CVs, creación y desarrollo de marca personal, elección de plataforma de empleo idónea para cada sector profesional.',
+        bio: 'Recruitment for IT position, specially developers and analyst-developers to big companies. Send the profile to the partner and follow-up of the incorporation.',
         date: '10/2017 - 04/2018',
         company: 'Zemsania Global Group'
        }
     ];
 
       getExperiences() {
-
         return this.experiences;
       }
 
