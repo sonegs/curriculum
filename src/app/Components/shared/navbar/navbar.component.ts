@@ -9,11 +9,16 @@ import { Router } from '@angular/router';
 
 })
 export class NavbarComponent implements OnInit {
-
+whenClick = false;
   constructor( private router: Router ) { }
 
   ngOnInit() {
+  }
 
-
+  isFalse() {
+ this.whenClick = true;
+  }
+  isTrue() {
+ this.whenClick = false;
   }
 }

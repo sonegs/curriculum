@@ -1,0 +1,22 @@
+.subsection-title {
+    margin-top: 5%;
+}
+
+@media (min-width:992px) {
+    .container {
+        padding-left: 5%;
+        margin-right: -30px;
+    }
+    .subsection-title {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:406px) {
+    .subsection-title {
+        margin-top: 25%;
+    }
+    .resume-content {
+        margin-bottom: 5%;
+    }
+}

@@ -1,4 +1,6 @@
-import { animation, trigger, animateChild, group, state, transition, animate, style, query, keyframes } from '@angular/animations';
+import { animation, animate, style, keyframes } from '@angular/animations';
+
+/* this const describes the params of the animation. This effect would do with CSS but i show something new by this way */
 
 export const transAnimation =
     animation([

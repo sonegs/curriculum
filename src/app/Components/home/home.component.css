@@ -1,5 +1,17 @@
-.Home {
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-}
+    .mobile img {
+        height: 4.5rem;
+        width: 4.5rem;
+        display: flex;
+        border-radius: 20%;
+    }
+    
+    .mobile {
+        position: absolute;
+        margin-left: 72%;
+    }
+    
+    @media (max-width:400px) {
+        .resume-content {
+            margin-top: 25%;
+        }
+    }

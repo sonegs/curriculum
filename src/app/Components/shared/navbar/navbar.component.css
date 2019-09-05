@@ -1,4 +1,4 @@
-/* Fuente: Start Bootstrap */
+/* Font: Start Bootstrap with some changes*/
 
 h1,
 h2,
@@ -37,7 +37,6 @@ h3 {
     letter-spacing: .05rem;
     text-transform: uppercase;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    ;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link:hover {
@@ -45,7 +44,7 @@ h3 {
     transition: 0.60s;
 }
 
-@media (min-width:1075px) {
+@media (min-width:992px) {
     #sideNav {
         text-align: center;
         position: fixed;
@@ -97,65 +96,6 @@ h3 {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block
     }
-}
-
-section.resume-section {
-    padding-top: 5rem!important;
-    padding-bottom: 5rem!important;
-    max-width: 75rem
-}
-
-section.resume-section .resume-item .resume-date {
-    min-width: none
-}
-
-@media (min-width:300px) {
-    section.resume-section {
-        min-height: 100vh
-    }
-    section.resume-section .resume-item .resume-date {
-        min-width: 18rem
-    }
-}
-
-@media (min-width:300px) {
-    section.resume-section {
-        padding-top: 3rem!important;
-        padding-bottom: 3rem!important
-    }
-}
-
-.bg-primary {
-    background-color: #356cd1!important;
-    background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(1, 104, 238, 0.5));
-}
-
-.social-icons a {
-    display: inline-table;
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: #234686;
-    color: #fff!important;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin-right: 1rem;
-    /* css de los iconos de redes sociales */
-}
-
-.social-icons a:hover {
-    /* cuando el raton está encima de los iconos de redes sociales */
-    background-color: #3b82df;
-    transition: 0.40s
-}
-
-#sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 600;
-    text-transform: uppercase
-}
-
-@media (min-width:992px) {
     .social-icons a {
         display: inline-block;
         height: 3.5rem;
@@ -208,63 +148,29 @@ section.resume-section .resume-item .resume-date {
     }
 }
 
-section.resume-section {
-    border-bottom: 1px solid #dee2e6;
-    padding-top: 5rem!important;
-    padding-bottom: 5rem!important
+.bg-primary {
+    background-color: #356cd1!important;
+    background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(1, 104, 238, 0.5));
 }
 
-section.resume-section .resume-item .resume-date {
-    min-width: none
+.social-icons a {
+    /* social networks CSS icons */
+    display: inline-table;
+    height: 3rem;
+    width: 3rem;
+    background-color: #234686;
+    color: #fff!important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-right: 1rem;
 }
 
-@media (min-width:768px) {
-    section.resume-section {
-        min-height: 100vh
-    }
-    section.resume-section .resume-item .resume-date {
-        min-width: 18rem
-    }
-}
-
-@media (min-width:992px) {
-    section.resume-section {
-        padding-top: 3rem!important;
-        padding-bottom: 3rem!important
-    }
-}
-
-#sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto
-}
-
-#sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%
-}
-
-#sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block
-}
-
-#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block
-}
-
-#sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: .5rem
-}
-
-#sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: .5rem solid rgba(255, 255, 255, .2)
+.social-icons a:hover {
+    /* when the mouse is over the social networks icons */
+    background-color: #3b82df;
+    transition: 0.40s
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {

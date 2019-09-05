@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Host } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TechnologyService, Technology } from '../../services/technologies.service';
-
-
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-technologies',
@@ -11,26 +10,40 @@ import { TechnologyService, Technology } from '../../services/technologies.servi
 })
 export class TechnologyComponent implements OnInit {
 
+
   active = true;
   technologies: Technology[] = [];
+  propiedades = {
+    unshadows: false
+  };
 
+// There are the change device var
+
+  changeText: boolean;
+  isMobile: boolean;
+  isTablet: boolean;
+  isDesktopDevice: boolean;
 
   // tslint:disable-next-line:variable-name
   constructor( private _technologyService: TechnologyService,
                private activatedRoute: ActivatedRoute,
-               private router: Router) {
+               private router: Router,
+               private deviceService: DeviceDetectorService) {
+
+                this.deviceFunction();
+
    }
 
-   propiedades = {
-    unshadows: false,
-    transparent: false // gracias a lo escrito en el clases.component, si cambiamos esta variable
-    // a true o false, podemos modificar su color
-  };
+deviceFunction() {
+  this.isMobile = this.deviceService.isMobile(); // identify if the device is a mobile device
+  this.isDesktopDevice = this.deviceService.isDesktop(); // identify if the device is a mobile device
+  this.isTablet = this.deviceService.isTablet(); // identify if the device is a mobile device
+}
 
    ngOnInit() {
 
     this.technologies = this._technologyService.getTechnology();
-    console.log(this.technologies);
+
   }
 
   }

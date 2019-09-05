@@ -1,29 +1,22 @@
 <div class="container-fluid p-0">
     <div class="About">
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
-            <div class="animated fadeIn fast">
-                <h1 class="subsection-title title-medium text-center text-primary">About me</h1>
+            <div class="section">
+                <h1 class="subsection-title title-medium text-center text-primary animated fadeIn fast" (mouseover)="bounce()">About me</h1>
                 <br>
-                <table class="animated fadeIn">
+                <table class="table">
 
-                    <div class="col" *ngFor="let about of abouts" routerLinkActive="active">
-                        <div class="row-4">
+                    <div class="col" routerLinkActive="active">
+                        <div class="row-4" *ngFor="let about of abouts">
                             <br>
                             <p class='lead mb-5'>
-                                <img class="icons" [src]="about.img" (mouseover)="bounce(this.about.img)" [@bouncing]="currentState"> {{about.bio}}
+                                <img class="icons" [src]="about.img" [@bouncing]="currentState"> {{about.bio}}
                             </p>
                         </div>
 
                     </div>
-
-
                 </table>
-
             </div>
-
-
         </section>
-
-
     </div>
 </div>

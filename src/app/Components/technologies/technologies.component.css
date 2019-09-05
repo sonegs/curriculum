@@ -1,4 +1,49 @@
 .images {
-    width: 200px;
-    height: 200px;
+    width: 75%;
+    height: 75%;
+}
+
+.subsection-title {
+    margin-top: 10%;
+}
+
+.resume-content {
+    min-width: 400px;
+}
+
+.mobile .images {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+.mobile {
+    margin-top: 30%;
+    align-content: center;
+}
+
+@media (min-width:992px) {
+    .resume-content {
+        position: absolute;
+    }
+    .section {
+        position: relative;
+    }
+    .images {
+        width: 75%;
+        height: 75%;
+    }
+    .subsection-title {
+        margin-top: 15%;
+    }
+    .row {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width:630px) {
+    .resume-section {
+        margin-top: -20%;
+    }
 }

@@ -1,5 +1,5 @@
 .title {
-    margin-top: 10%;
+    margin-top: 11%;
 }
 
 perfect-scrollbar {
@@ -13,10 +13,14 @@ perfect-scrollbar {
 .bodytype {
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    max-width: 100%;
     max-height: 60%;
-    margin-right: -20%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.return {
+    text-align: center;
 }
 
 .icon {
@@ -27,6 +31,7 @@ perfect-scrollbar {
 .line-content {
     text-align: center;
     min-width: 20%;
+    max-width: 200%;
     justify-content: center;
     align-items: center;
     padding: 3rem 1rem;
@@ -36,12 +41,12 @@ perfect-scrollbar {
     display: inline-block;
     flex: 0 0 auto;
     padding-left: 5%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30%;
+    margin-bottom: 30%;
 }
 
 @media (max-width:450px) {
-    /*para moviles*/
+    /*for mobile devices*/
     .title {
         margin-top: 30%;
     }
@@ -49,9 +54,9 @@ perfect-scrollbar {
         justify-content: center;
     }
     perfect-scrollbar {
-        height: 400px;
-        max-width: 500px;
-        min-width: 200px;
+        height: max-content;
+        max-width: 100%;
+        min-width: 20%;
         background: rgba(100, 187, 235, 0.8);
     }
     .essence {
@@ -67,7 +72,6 @@ perfect-scrollbar {
     .icon {
         width: 50px!important;
         height: 50px!important;
-        color: white;
     }
     .line-content {
         padding: inherit;
@@ -91,11 +95,12 @@ perfect-scrollbar {
         left: 0;
     }
     .essence {
-        padding-right: 15%;
+        padding-right: 10%;
+        padding-left: 10%;
         display: auto;
         width: max-content;
     }
-    .essence:hover {
-        background: rgba(95, 187, 235, 0.8);
+    .line {
+        margin-left: 30%;
     }
 }

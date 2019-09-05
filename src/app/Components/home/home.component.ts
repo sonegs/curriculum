@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, useAnimation } from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, transition, useAnimation } from '@angular/animations';
 import { transAnimation } from '../shared/animation/animation';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-home',
@@ -21,21 +22,29 @@ import { transAnimation } from '../shared/animation/animation';
     ])
   ]
 })
+
 export class HomeComponent implements OnInit {
+
   currentState = 'normal';
-  constructor() { }
+  isMobile: boolean;
+
+  constructor(private deviceService: DeviceDetectorService) {
+    this.deviceFunction();
+   }
 
   ngOnInit() {
+  }
 
+  deviceFunction() {
+    this.isMobile = this.deviceService.isMobile(); // identify if the device is a mobile device
   }
 
   bounce() {
+    /* this functions will do that the gps icon bounce */
     this.currentState = this.currentState === 'normal' ? '*' : 'normal';
-    console.log('llamada al salto');
   }
   out() {
-    this.currentState = 'normal';
-    console.log('');
+    this.currentState = 'out';
   }
 
 }

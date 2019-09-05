@@ -9,14 +9,22 @@
                 <perfect-scrollbar>
                     <div class="line">
                         <div class="line-content">
-                            <div class="essence" *ngFor=" let education of educations" (mouseover)="changeText=true" (mouseleave)="changeText=false">
-                                <div class="appear">
+                            <div class="essence" *ngFor=" let education of educations">
+                                <div class="hidden" *ngIf="changeText" (click)="changeText=false">
                                     <img class="icon" [src]="education.icon">
-                                    <h4 class="name" *ngIf="!changeText"> {{education.name}}</h4>
-                                    <h6 *ngIf="!changeText"> {{education.date}}</h6>
+                                    <div class="all" *ngIf="changeText">
+                                        <h4> {{education.name}}</h4>
+                                        <h5> {{education.bio}}</h5>
+                                        <h6> {{education.company}}</h6>
+                                        <h6> {{education.date}}</h6>
+                                    </div>
                                 </div>
-                                <div class="date" *ngIf="changeText">
-                                    <h4> {{education.bio}}</h4>
+                                <div class="appear" *ngIf="!changeText" (click)="changeText=true">
+                                    <img class="icon" [src]="education.icon">
+                                    <div class="less" *ngIf="!changeText">
+                                        <h4> {{education.name}}</h4>
+                                        <h6> {{education.date}}</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
