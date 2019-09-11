@@ -1,10 +1,14 @@
     img {
-        width: 5%;
+        width: 2rem;
         height: 88%;
     }
     
     table {
         table-layout: auto;
+    }
+    
+    .subsection-title {
+        margin-top: 5rem;
     }
     
     @media (min-width:992px) {
@@ -25,10 +29,13 @@
         .resume-content {
             position: relative;
         }
+        .subsection-title {
+            margin-top: 0rem;
+        }
     }
     
     @media (max-width:406px) {
         .subsection-title {
-            margin-top: 25%;
+            margin-top: 4rem;
         }
     }

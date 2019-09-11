@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 
 @Component({
@@ -9,16 +10,18 @@ import { Router } from '@angular/router';
 
 })
 export class NavbarComponent implements OnInit {
-whenClick = false;
-  constructor( private router: Router ) { }
-
-  ngOnInit() {
-  }
-
-  isFalse() {
- this.whenClick = true;
-  }
-  isTrue() {
- this.whenClick = false;
-  }
+  isMobile: boolean;
+isDesktopDevice: boolean;
+  deviceFunction() {
+    this.isMobile = this.deviceService.isMobile(); // identify if the device is a mobile device
+    this.isDesktopDevice = this.deviceService.isDesktop(); // identify if the device is a mobile device
 }
+  constructor( private router: Router,
+               private deviceService: DeviceDetectorService ) {
+      this.deviceFunction ();
+    }
+
+      ngOnInit() {
+
+      }
+  }

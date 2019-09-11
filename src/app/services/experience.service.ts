@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ExperienceService {
-constructor() { console.log('La conexión con el servicio funciona correctamente'); }
+constructor() { }
 
     private experiences: Experience [] = [
       {

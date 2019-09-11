@@ -9,6 +9,10 @@ perfect-scrollbar {
     max-height: 460px;
 }
 
+.subsection-title {
+    margin-top: 7rem;
+}
+
 .cola,
 .bodytype {
     justify-content: center;

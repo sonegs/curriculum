@@ -51,12 +51,6 @@ ngOnInit() {
 
 bounce() {
 
-/* -------------------------------------------------------------------------------------
-    this.activatedRoute.params.subscribe( params => {
-      console.log(params.id);
-      this.about = this._AboutService.getAbout( params.id );
-    });
-    */
     this.currentState = this.currentState === 'normal' ? '*' : 'normal';
     setTimeout(() => {
       this.currentState = 'normal';
