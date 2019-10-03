@@ -7,7 +7,7 @@ constructor() { }
     private educations: Education [] = [
       {
         name: 'Udemy Courses',
-        bio: 'Angular 8 · MySQL Databases',
+        bio: 'Angular 8 · Testing',
         date: '2019',
         company: 'Udemy',
         icon: 'assets/img/education/icons/angular.svg'
@@ -35,14 +35,14 @@ constructor() { }
       },
       {
       name: 'Master in Organizations and Job Psychology',
-      bio: 'Recruitment, change management and work enviroment',
+      bio: 'Recruitment and work enviroment',
       date: '2016-2018',
       company: 'Seville University',
       icon: 'assets/img/education/icons/master.svg'
       },
       {
        name: 'Psychology Degree',
-       bio: 'Social Psychology special mention',
+       bio: 'Social special mention',
        date: '2012-2016',
        company: 'Jaén University',
        icon: 'assets/img/education/icons/psico.svg'

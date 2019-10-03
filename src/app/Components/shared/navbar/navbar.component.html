@@ -1,85 +1,43 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top animated fadeIn fast" id="sideNav">
-
-
-
-
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fadeIn fast" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="www.miguelcobomartinez.com">
         <span class="d-block d-lg-none">Miguel Cobo Martínez</span>
         <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Yo.jpeg"  alt="Me" id="me">
-      </span>
+<img alt="" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Yo.jpeg">
+</span>
     </a>
-
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <br>
-
-    <div class="navbar-collapse collapse " id="navbarSupportedContent">
-        <div class="btn-group" role="group">
-
-            <button data-target="#navbarSupportedContent" data-toggle="collapse" type="button" *ngIf="isMobile">
-
-            <ul class="navbar-nav" routerLinkActive="active">
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['home']">
-                        Home 
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['education']">
-                        Education
-                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['experience']">
-                        Experience
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['technologies']">
-                        Technologies
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['about']">
-                        About me
-                    </a>
-                </li>
-            </ul>
-        </button>
-            <br>
-        </div>
-        <ul class="navbar-nav" routerLinkActive="active" *ngIf="isDesktopDevice">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" routerLinkActive="active">
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['home']">
-                        Home 
-                    </a>
+                            Home 
+                        </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['education']">
-                        Education
-                     </a>
+                            Education
+                         </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['experience']">
-                        Experience
-                    </a>
+                            Experience
+                        </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['technologies']">
-                        Technologies
-                    </a>
+                            Technologies
+                        </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['about']">
-                        About me
-                    </a>
+                            About me
+                        </a>
             </li>
         </ul>
-
-
     </div>
+
     <div class="social-icons">
 
         <a href="https://www.linkedin.com/in/miguelcobomartinez/" target="_blank">

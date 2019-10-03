@@ -153,6 +153,14 @@ h3 {
     background-image: linear-gradient( rgba(4, 34, 73, 0.5), rgba(1, 104, 238, 0.5));
 }
 
+.navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto
+}
+
 .social-icons a {
     /* social networks CSS icons */
     display: inline-table;
